@@ -10,4 +10,5 @@ function showPage(id){
             page.style = "display: none !important;";
         }
     }
+    window.scrollTo({top: 0, behavior: 'smooth'});
 }
