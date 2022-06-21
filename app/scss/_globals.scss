@@ -5,13 +5,37 @@ $group-background-color: white;
 $border-color: #707070;
 $button-background-color: #E3E3E3;
 
+// Fonts
+
+$font-size: 1.25rem;
+
 
 body{
     margin: 0px;
     font-family: "Roboto";
     font-size: 1.25rem;
     background-color : $background-color;
+
 }
+
+p{
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h3{
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0px;
+    display:inline;
+}
+
+
+// Main Blocks creation
 
 .main-grid{
     margin: 1.84375rem 0px  1.84375rem 0px;
@@ -22,20 +46,80 @@ body{
     row-gap: 2.96875rem;
 }
 
+// Profile Image (top left corner)
+
 #image-group{
     grid-column: 1/ span 1;
     background-color: $group-background-color;
     height: 21.875rem;
+    width: 22.5rem;
+
+    #info-container {
+        width: 17.875rem;
+        height: 16.625rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
+#profile-photo{
+    width: 10.9375rem;
+    height: 10.9375rem;
+    margin-bottom: 1rem;
+}
+
+#name{
+    font-size: 1.75rem;
+    margin: 0px 0px 0.3125rem 0px;
+}
+
+#description{
+    margin: 0;
+}
+
+
+// Nav Bar (bottome left corner)
 
 #nav-group{
     grid-column: 1/ span 1;
-    background-color: $group-background-color;
     height: 38.890625rem;
+    width: 22.5rem;
+    display: grid;
+    row-gap: 2.625rem;
 }
+
+.nav-button{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-rectangle{
+    height: calc(100% - 2px);
+    width: calc(4.294375rem - 2px);
+    background-color: $group-background-color;
+
+    .icon{
+        width: 2.25rem; 
+        height: 2.25rem;
+    }
+}
+
+.text-rectangle{
+    height: calc(100% - 2px);
+    width: calc(18.25rem - 2px);
+    background-color: $button-background-color;
+}
+
+
+// Main Content (right section)
 
 #text-group{
     grid-column: 2/ span 1;
     grid-row: 1/ span 2;
     background-color: $group-background-color;
+    width: 22.46875rem;
 }

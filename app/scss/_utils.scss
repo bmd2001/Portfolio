@@ -6,16 +6,32 @@
     align-items: center;
 }
 
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
 // Aesthetics
 
+.circle{
+    border-radius: 50%;
+}
 .rounded-corners{
     border-radius: 0.625rem;
 }
+.rounded-corners-left{
+    border-radius: 0.625rem 0 0 0.625rem;
+}
+.rounded-corners-right{
+    border-radius: 0 0.625rem 0.625rem 0;
+}
+
 
 .border{
     border: 0.0625rem solid $border-color;
 }
 
-.circle{
-    border-radius: 50%;
+
+.text-align-center{
+    text-align: center;
 }
