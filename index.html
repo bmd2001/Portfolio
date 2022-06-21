@@ -21,49 +21,42 @@
         </div>
 
         <nav id="nav-group">
-            <a href="#">
-                <div class="nav-button flex-row">
-                    <div class="icon-rectangle border rounded-corners-left centered"><img src="assets/navbar/Person Icon.svg" alt="Person Icon" class="icon"></div>
-                    <div class="text-rectangle border rounded-corners-right centered">
-                        <h3>About Me</h3>
-                    </div>
+            <div class="nav-button flex-row" onclick='showPage("About-Me")'>
+                <div class="icon-rectangle border rounded-corners-left centered"><img src="assets/navbar/Person Icon.svg" alt="Person Icon" class="icon"></div>
+                <div class="text-rectangle border rounded-corners-right centered">
+                    <h3>About Me</h3>
+                 </div>
+            </div>
+            <div class="nav-button flex-row" onclick='showPage("Education")'>
+                <div class="icon-rectangle border rounded-corners-left centered"><img src="assets/navbar/Education Icon.svg" alt="Education Icon" class="icon"></div>
+                <div class="text-rectangle border rounded-corners-right centered">
+                    <h3>Education</h3>
                 </div>
-            </a><a href="#">
-                <div class="nav-button flex-row">
-                    <div class="icon-rectangle border rounded-corners-left centered"><img src="assets/navbar/Education Icon.svg" alt="Education Icon" class="icon"></div>
-                    <div class="text-rectangle border rounded-corners-right centered">
-                        <h3>Education</h3>
-                    </div>
+            </div>
+            <div class="nav-button flex-row" onclick='showPage("Work-Experiences")'>
+                <div class="icon-rectangle border rounded-corners-left centered"><img src="assets/navbar/Suitcase Icon.svg" alt="Suitcase Icon" class="icon"></div>
+                <div class="text-rectangle border rounded-corners-right centered">
+                    <h3>Work Experiences</h3>
                 </div>
-            </a><a href="#">
-                <div class="nav-button flex-row">
-                    <div class="icon-rectangle border rounded-corners-left centered"><img src="assets/navbar/Suitcase Icon.svg" alt="Suitcase Icon" class="icon"></div>
-                    <div class="text-rectangle border rounded-corners-right centered">
-                        <h3>Work Experiences</h3>
-                    </div>
+            </div>
+            <div class="nav-button flex-row" onclick='showPage("Technical-Skills-&-Certifications")'>
+                <div class="icon-rectangle border rounded-corners-left centered"><img src="assets/navbar/Wrench Icon.svg" alt="Technical Skills Icon" class="icon"></div>
+                <div class="text-rectangle border rounded-corners-right centered">
+                    <h3>Technical Skill and Certifications</h3>
                 </div>
-            </a><a href="#">
-                <div class="nav-button flex-row">
-                    <div class="icon-rectangle border rounded-corners-left centered"><img src="assets/navbar/Wrench Icon.svg" alt="Technical Skills Icon" class="icon"></div>
-                    <div class="text-rectangle border rounded-corners-right centered">
-                        <h3>Technical Skill and Certifications</h3>
-                    </div>
+            </div>
+            <div class="nav-button flex-row" onclick='showPage("Interests")'>
+                <div class="icon-rectangle border rounded-corners-left centered"><img src="assets/navbar/Interests Icon.svg" alt="Interests Icon" class="icon"></div>
+                <div class="text-rectangle border rounded-corners-right centered">
+                    <h3>Interests</h3>
                 </div>
-            </a><a href="#">
-                <div class="nav-button flex-row">
-                    <div class="icon-rectangle border rounded-corners-left centered"><img src="assets/navbar/Interests Icon.svg" alt="Interests Icon" class="icon"></div>
-                    <div class="text-rectangle border rounded-corners-right centered">
-                        <h3>Interests</h3>
-                    </div>
+            </div>
+            <div class="nav-button flex-row" onclick='showPage("Contacts-&-References")'>
+                <div class="icon-rectangle border rounded-corners-left centered"><img src="assets/navbar/Phone Icon.svg" alt="Phone Icon" class="icon"></div>
+                <div class="text-rectangle border rounded-corners-right centered">
+                    <h3>Contacts & References</h3>
                 </div>
-            </a><a href="#">
-                <div class="nav-button flex-row">
-                    <div class="icon-rectangle border rounded-corners-left centered"><img src="assets/navbar/Phone Icon.svg" alt="Phone Icon" class="icon"></div>
-                    <div class="text-rectangle border rounded-corners-right centered">
-                        <h3>Contacts & References</h3>
-                    </div>
-                </div>
-            </a>
+            </div>
         </nav>
 
         <div id="text-group" class="rounded-corners border centered">
@@ -76,12 +69,15 @@
             </div>
 
 
-            <div id=""></div>
-            <div id=""></div>
-            <div id=""></div>
-            <div id=""></div>
-            <div id=""></div>
+            <div id="Education"></div>
+            <div id="Work-Experiences"></div>
+            <div id="Technical-Skills-&-Certifications"></div>
+            <div id="Interests"></div>
+            <div id="Contacts-&-References"></div>
         </div>
     </div>
+
+
+    <script type="text/javascript" src="app/js/main.js"></script>
 </body>
 </html>
