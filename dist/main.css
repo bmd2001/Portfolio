@@ -1,12 +1,8 @@
 body {
   margin: 0px;
   font-family: "Roboto";
-  font-size: 1.25rem;
-  background-color: #F2EECB;
-}
-
-p {
   font-size: 1rem;
+  background-color: #F2EECB;
 }
 
 a {
@@ -15,7 +11,7 @@ a {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 200;
   margin: 0px;
   display: inline;
