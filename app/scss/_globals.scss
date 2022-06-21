@@ -1,0 +1,41 @@
+// Colors
+
+$background-color: #F2EECB;
+$group-background-color: white;
+$border-color: #707070;
+$button-background-color: #E3E3E3;
+
+
+body{
+    margin: 0px;
+    font-family: "Roboto";
+    font-size: 1.25rem;
+    background-color : $background-color;
+}
+
+.main-grid{
+    margin: 1.84375rem 0px  1.84375rem 0px;
+    height: 63.8125rem;
+    width: 47.944375rem;
+    display: grid;
+    column-gap: 2.975rem;
+    row-gap: 2.96875rem;
+}
+
+#image-group{
+    grid-column: 1/ span 1;
+    background-color: $group-background-color;
+    height: 21.875rem;
+}
+
+#nav-group{
+    grid-column: 1/ span 1;
+    background-color: $group-background-color;
+    height: 38.890625rem;
+}
+
+#text-group{
+    grid-column: 2/ span 1;
+    grid-row: 1/ span 2;
+    background-color: $group-background-color;
+}

@@ -1,0 +1,21 @@
+// Disposition
+
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Aesthetics
+
+.rounded-corners{
+    border-radius: 0.625rem;
+}
+
+.border{
+    border: 0.0625rem solid $border-color;
+}
+
+.circle{
+    border-radius: 50%;
+}
