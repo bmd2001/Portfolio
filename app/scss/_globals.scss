@@ -22,6 +22,10 @@ a{
     color: black;
 }
 
+h2{
+    -webkit-text-stroke: 0.2px $border-color;
+}
+
 h3{
     font-size: 1.125rem;
     font-weight: 200;
@@ -62,12 +66,12 @@ h3{
 #profile-photo{
     width: 10.9375rem;
     height: 10.9375rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 #name{
     font-size: 1.75rem;
-    margin: 0px 0px 0.3125rem 0px;
+    margin: 0px 0px 0.5rem 0px;
 }
 
 #description{
@@ -117,4 +121,10 @@ h3{
     grid-row: 1/ span 2;
     background-color: $group-background-color;
     width: 22.46875rem;
+
+    div{
+        height: 100%;
+        width: calc(100% - 3rem);
+        display: none;
+    }
 }
