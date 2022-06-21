@@ -11,7 +11,9 @@ a {
 }
 
 h2 {
+  color: black;
   -webkit-text-stroke: 0.2px #707070;
+  margin: 2rem 0px 2rem 0px;
 }
 
 h3 {
@@ -180,9 +182,5 @@ h3 {
 
 #About-Me {
   display: block !important;
-}
-
-#About-Me h2 {
-  margin: 2rem 0px 2rem 0px;
 }
 /*# sourceMappingURL=main.css.map */
