@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
     <link rel="stylesheet" href="dist/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body class = "centered">
     <div class="main-grid grid">
@@ -72,68 +73,104 @@
             <div id="Education">
                 <h2 class="text-align-center">Education</h2>
                 <div id="marks-menu" class="grid">
-                    <div id="left-arrow"><img src="assets/arrow.svg" alt="Left Arrow"></div>
+                    <div id="left-arrow"><img src="assets/arrow.svg" alt="Left Arrow" onclick="changeGrade(-1)"></div>
 
                     <div id="marks-grid" class ="grid">
-                        <div id="grade1" class="mark-container grid">
+                        <div class="mark-container grid">
                             <svg class="circle-graph">
+                                <circle 
+                                stroke="gray"
+                                stroke-width="8"
+                                fill="transparent"
+                                r="52"
+                                cx="56"
+                                cy="56"></circle>
                                 <circle 
                                 stroke="red"
                                 stroke-width="8"
                                 fill="transparent"
                                 r="52"
                                 cx="56"
-                                cy="56"></circle>
+                                cy="56"
+                                class = "outer-circle"></circle>
+                                <text id="grade1" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="grade-text">87%</text>
                             </svg>
                             
-                            <p class="grade-text text-align-center">Theory 1</p>
+                            <p id="module1" class="module-text text-align-center">Theory 1</p>
                             
                         </div>
-                        <div id="grade2" class="mark-container grid">
+                        <div class="mark-container grid">
                             <svg class="circle-graph">
+                                <circle 
+                                stroke="gray"
+                                stroke-width="8"
+                                fill="transparent"
+                                r="52"
+                                cx="56"
+                                cy="56"></circle>
                                 <circle 
                                 stroke="red"
                                 stroke-width="8"
                                 fill="transparent"
                                 r="52"
                                 cx="56"
-                                cy="56"></circle>
+                                cy="56"
+                                class = "outer-circle"></circle>
+                                <text id="grade2" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="grade-text">98%</text>
                             </svg>
                             
-                            <p class="grade-text text-align-center">Software 1</p>
+                            <p id="module2" class="module-text text-align-center">Software 1</p>
                             
                         </div>
-                        <div id="grade3" class="mark-container grid">
+                        <div class="mark-container grid">
                             <svg class="circle-graph">
+                                <circle 
+                                stroke="gray"
+                                stroke-width="8"
+                                fill="transparent"
+                                r="52"
+                                cx="56"
+                                cy="56"></circle>
                                 <circle 
                                 stroke="red"
                                 stroke-width="8"
                                 fill="transparent"
                                 r="52"
                                 cx="56"
-                                cy="56"></circle>
+                                cy="56"
+                                class = "outer-circle"></circle>
+                                <text id="grade3" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="grade-text">77%</text>
                             </svg>
                             
-                            <p class="grade-text text-align-center">Systems & Devices 1</p>
+                            <p id="module3" class="module-text text-align-center">Systems & Devices 1</p>
                             
                         </div>
-                        <div id="grade4" class="mark-container grid">
+                        <div class="mark-container grid">
                             <svg class="circle-graph">
+                                <circle 
+                                stroke="gray"
+                                stroke-width="8"
+                                fill="transparent"
+                                r="52"
+                                cx="56"
+                                cy="56"></circle>
                                 <circle 
                                 stroke="red"
                                 stroke-width="8"
                                 fill="transparent"
                                 r="52"
                                 cx="56"
-                                cy="56"></circle>
+                                cy="56"
+                                class = "outer-circle"></circle>
+                                <text id="grade4" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="grade-text">65%</text>
                             </svg>
                             
-                            <p class="grade-text text-align-center">Human-Computer Interactions 1</p>
+                            <p id = "module4" class="module-text text-align-center">Human-Computer Interactions 1</p>
                             
                         </div>
                     </div>
 
-                    <div id="right-arrow"><img src="assets/arrow.svg" alt="Left Arrow"></div>
+                    <div id="right-arrow"><img src="assets/arrow.svg" alt="Right Arrow" onclick="changeGrade(+1)"></div>
                 </div>
             </div>
 

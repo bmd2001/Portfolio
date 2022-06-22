@@ -214,6 +214,7 @@ h3 {
           align-items: center;
   height: 100%;
   width: 1.375rem;
+  cursor: pointer;
 }
 
 #right-arrow img {
@@ -240,8 +241,18 @@ h3 {
   margin: 0px auto 0px auto;
 }
 
-.grade-text {
+.outer-circle {
+  -webkit-transition: stroke-dashoffset 1s, stroke 1s ease;
+  transition: stroke-dashoffset 1s, stroke 1s ease;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.grade-text, .module-text {
   font-size: 0.75rem;
   margin: 0rem;
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */

@@ -11,6 +11,7 @@
     align-items: center;
     height: 100%;
     width: 1.375rem;
+    cursor: pointer;
 }
 
 #right-arrow{
@@ -36,7 +37,14 @@
     margin: 0px auto 0px auto;
 }
 
-.grade-text{
+.outer-circle{
+    transition: stroke-dashoffset 1s, stroke 1s ease;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%,
+}
+
+.grade-text, .module-text{
     font-size: 0.75rem;
     margin: 0rem;
+    opacity: 1;
 }
