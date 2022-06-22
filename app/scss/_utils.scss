@@ -6,9 +6,19 @@
     align-items: center;
 }
 
+.space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .flex-row{
     display: flex;
     flex-direction: row;
+}
+
+.grid{
+    display:grid;
 }
 
 // Aesthetics

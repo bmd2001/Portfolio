@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="dist/main.css">
 </head>
 <body class = "centered">
-    <div class="main-grid">
+    <div class="main-grid grid">
 
         <div id="image-group" class="rounded-corners border centered">
 
@@ -20,7 +20,7 @@
 
         </div>
 
-        <nav id="nav-group">
+        <nav id="nav-group" class="grid">
             <div class="nav-button flex-row" onclick='showPage("About-Me")'>
                 <div class="icon-rectangle border rounded-corners-left centered"><img src="assets/navbar/Person Icon.svg" alt="Person Icon" class="icon"></div>
                 <div class="text-rectangle border rounded-corners-right centered">
@@ -71,7 +71,70 @@
 
             <div id="Education">
                 <h2 class="text-align-center">Education</h2>
-                div
+                <div id="marks-menu" class="grid">
+                    <div id="left-arrow"><img src="assets/arrow.svg" alt="Left Arrow"></div>
+
+                    <div id="marks-grid" class ="grid">
+                        <div id="grade1" class="mark-container grid">
+                            <svg class="circle-graph">
+                                <circle 
+                                stroke="red"
+                                stroke-width="8"
+                                fill="transparent"
+                                r="52"
+                                cx="56"
+                                cy="56"></circle>
+                            </svg>
+                            
+                            <p class="grade-text text-align-center">Theory 1</p>
+                            
+                        </div>
+                        <div id="grade2" class="mark-container grid">
+                            <svg class="circle-graph">
+                                <circle 
+                                stroke="red"
+                                stroke-width="8"
+                                fill="transparent"
+                                r="52"
+                                cx="56"
+                                cy="56"></circle>
+                            </svg>
+                            
+                            <p class="grade-text text-align-center">Software 1</p>
+                            
+                        </div>
+                        <div id="grade3" class="mark-container grid">
+                            <svg class="circle-graph">
+                                <circle 
+                                stroke="red"
+                                stroke-width="8"
+                                fill="transparent"
+                                r="52"
+                                cx="56"
+                                cy="56"></circle>
+                            </svg>
+                            
+                            <p class="grade-text text-align-center">Systems & Devices 1</p>
+                            
+                        </div>
+                        <div id="grade4" class="mark-container grid">
+                            <svg class="circle-graph">
+                                <circle 
+                                stroke="red"
+                                stroke-width="8"
+                                fill="transparent"
+                                r="52"
+                                cx="56"
+                                cy="56"></circle>
+                            </svg>
+                            
+                            <p class="grade-text text-align-center">Human-Computer Interactions 1</p>
+                            
+                        </div>
+                    </div>
+
+                    <div id="right-arrow"><img src="assets/arrow.svg" alt="Left Arrow"></div>
+                </div>
             </div>
 
 
