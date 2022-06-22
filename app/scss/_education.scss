@@ -1,8 +1,6 @@
 #marks-menu{
     width: 100%;
     height: 20rem;
-    background-color: #F2EECB;
-
     grid-template-columns: 1.375rem 1fr 1.375rem;
 }
 
@@ -44,7 +42,9 @@
 }
 
 .grade-text, .module-text{
-    font-size: 0.75rem;
     margin: 0rem;
-    opacity: 1;
+}
+
+.module-text{
+    font-size: 0.75rem;
 }
