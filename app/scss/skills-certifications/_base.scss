@@ -1,0 +1,53 @@
+#skills-grid{
+    height: 23rem;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+}
+
+.logo-group{
+    height: 6rem;
+}
+
+.logo-link{
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+
+    div.circle.border{
+        height: calc(6rem - 2px);
+        width: calc(6rem - 2px);
+        position: absolute;
+    }
+}
+
+.level-bar{
+    width: 100%;
+    height: 1rem;
+}
+
+.level{
+    width: 1rem;
+    height: 0.5rem;
+    border: 0.0625rem solid $border-color;
+    margin-top: 0.5rem;
+}
+
+
+#certifications-text{
+    margin-top: 2rem;
+}
+
+#certifications-grid{
+    height: 23rem;
+    row-gap: 2.125rem;
+}
+
+.certification{
+    height: 6.25rem;
+}
+
+.certification-link{
+    height: 100%;
+    width: 6.25rem;
+}
