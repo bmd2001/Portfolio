@@ -22,6 +22,11 @@
     }
 }
 
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
 .grid{
     display:grid;
 }
