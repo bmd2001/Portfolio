@@ -435,4 +435,31 @@ img[src^="assets/skills-certifications"] {
   width: 1.25rem;
   height: 1.25rem;
 }
+
+#contacts-grid {
+  height: 23rem;
+}
+
+.contact-container {
+  height: 3rem;
+}
+
+.contact-icon {
+  width: calc(3rem - 2px);
+  height: calc(100% - 2px);
+}
+
+.contact-text {
+  width: calc(100% - 5rem);
+  height: calc(100% - 2px);
+}
+
+.contact-text p {
+  font-size: 0.875rem;
+}
+
+img[src^="assets/contacts-references"] {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 /*# sourceMappingURL=main.css.map */
