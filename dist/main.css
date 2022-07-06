@@ -438,6 +438,7 @@ img[src^="assets/skills-certifications"] {
 
 #contacts-grid {
   height: 23rem;
+  margin-bottom: 3rem;
 }
 
 .contact-container {
@@ -456,6 +457,25 @@ img[src^="assets/skills-certifications"] {
 
 .contact-text p {
   font-size: 0.875rem;
+}
+
+.input {
+  margin-bottom: 0.5rem;
+}
+
+label {
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="submit"] {
+  border: 0.0625rem solid #707070;
+  margin-top: 0.25rem;
+  width: 6rem;
 }
 
 img[src^="assets/contacts-references"] {

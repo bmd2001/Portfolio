@@ -7,6 +7,7 @@
     <title>Portofolio</title>
     <link rel="stylesheet" href="dist/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="node_modules/he/he.js"></script>
 </head>
 <body class = "centered">
     <div class="main-grid grid">
@@ -388,15 +389,15 @@
                 <p>Contacts</p>
                 <div id="contacts-grid" class="grid">
                     <div class="contact-container flex-row space-between">
-                        <a href="" class="border rounded-corners centered contact-icon"><img src="assets/contacts-references/Mail Icon.svg" alt="Mail Icon" id="Mail_Icon"></a>
-                        <a href="" class="border centered contact-text">
-                            <p>dfb505@york.ac.uk</p>
+                        <a href="#" class="border rounded-corners centered contact-icon decode" onmousedown="encode(this, 0)"><img src="assets/contacts-references/Mail Icon.svg" alt="Mail Icon" id="Mail_Icon"></a>
+                        <a href="#" class="border centered contact-text decode" onmousedown="encode(this, 0)">
+                            <p>Send me an Email</p>
                         </a>
                     </div>
                     <div class="contact-container flex-row space-between">
-                        <a href="tel:+393471975605" class="border rounded-corners centered contact-icon"><img src="assets/contacts-references/Mobile Icon.svg" alt="Mobile Icon"></a>
-                        <a href="tel:+393471975605" class="border centered contact-text">
-                            <p>+39 3471975605</p>
+                        <a href="#" class="border rounded-corners centered contact-icon decode" onmousedown="encode(this, 1)"><img src="assets/contacts-references/Mobile Icon.svg" alt="Mobile Icon"></a>
+                        <a href="#" class="border centered contact-text decode" onmousedown="encode(this, 1)">
+                            <p>Call me</p>
                         </a>
                     </div>
                     <div class="contact-container flex-row space-between">
@@ -427,7 +428,11 @@
 
                 <p>Contact Form</p>
                 <div id="contact-form-grid" class="grid">
-
+                    <div class="input flex-column"><label for="name">Name:</label><input type="text" name="name" required></div>
+                    <div class="input flex-column"><label for="email">Email:</label><input type="email" name="email" required></div>
+                    <div class="input flex-column"><label for="object">Object:</label><input type="text" name="object" required></div>
+                    <div class="input flex-column"><label for="message">Message:</label><textarea cols="30" rows="10"></textarea></div>
+                    <input type="submit" class="rounded-corners">
                 </div>
             </div>
         </div>
@@ -435,5 +440,6 @@
 
 
     <script type="text/javascript" src="app/js/main.js"></script>
+    <script type="text/javascript" src="app/js/decoding.js"></script>
 </body>
 </html>

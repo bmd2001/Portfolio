@@ -1,5 +1,6 @@
 #contacts-grid{
     height: 23rem;
+    margin-bottom: 3rem;
 }
 
 .contact-container{
@@ -20,4 +21,21 @@
     }
 }
 
+.input{
+    margin-bottom: 0.5rem;
+}
 
+label{
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+textarea{
+    resize: none;
+}
+
+input[type="submit"]{
+    border: 0.0625rem solid $border-color;
+    margin-top: 0.25rem;
+    width: 6rem;
+}
