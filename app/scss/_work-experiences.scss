@@ -22,14 +22,19 @@
     }
 }
 
-#Mondadori_Logo{
-    width: 13.5625rem;
-    height: 2.125rem;
-}
-
 #TheYorker_Logo{
     width: 11.0625rem;
     height: 4.25rem;
+}
+
+#EpicGames_Logo{
+    width: 4rem;
+    height: 4rem;
+}
+
+#Mondadori_Logo{
+    width: 13.5625rem;
+    height: 2.125rem;
 }
 
 .work-experience-icon{
@@ -41,4 +46,21 @@
 .experience-text{
     font-size: 0.875rem;
     margin: 0px;
+}
+
+#bottom-arrow{
+    display: flex;
+    align-items: center;
+    height: 1.375rem;
+    width: 1.375rem;
+    cursor: pointer;
+
+    img{
+        transform: rotate(-90deg);
+        }
+
+    &-section{
+        height: 4.125rem;
+        width: 100%;
+    }
 }

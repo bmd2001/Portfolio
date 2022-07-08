@@ -1,5 +1,6 @@
 const pages = document.getElementById("text-group").children;
 var grade_idx = 1;
+var experience_idx = 0;
 const modules = [
     "Theory 1", "Software 1", "Systems & Devices 1", "Human-Computer Interactions 1", "Theory 2", 
     "Software 2", "Data 1", "Human-Computer Interactions 2", "Intelligent Systems 1", "Systems & Devices 2",
@@ -91,3 +92,23 @@ for(let i = 0; i < grades_circles.length; i++) {
 }
 
 changeGrade(-1);
+
+function changeExperience(){
+    const experiences = document.getElementById("experiences-grid").children;
+    if((experience_idx+1)*2 >= experiences.length){
+        experience_idx = 0;
+    }
+    else{
+        experience_idx = (experience_idx+1)*2;
+    }
+    
+
+    for (let i = 0; i < experiences.length; i++){
+        if (experience_idx == i| experience_idx+1 == i){
+            experiences[i].style = "display: block !important;"; 
+        }
+        else{
+            experiences[i].style = "display: none !important;";
+        }
+    }
+}

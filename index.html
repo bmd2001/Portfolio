@@ -184,6 +184,44 @@
                 <h2 class="text-align-center">Work Experience</h2>
                 <div id="experiences-grid" class="grid">
                     <div id="experience1" class="grid">
+                        <a id="TheYorker_Logo" href="http://theyorker.co.uk/" target="_blank">
+                            <img src="assets/work-experiences/TheYorker Icon.svg" alt="The Yorker Logo" id="TheYorker_Logo">
+                        </a>
+                        <div class="work-title flex-row centered">
+                            <img src="assets/work-experiences/Suitcase Icon.svg" alt="Suitcase Icon" class="work-experience-icon">
+                            <p>Technical Director</p>
+                        </div>
+                        <div class="period flex-row centered">
+                            <img src="assets/work-experiences/Calendar Icon.svg" alt="Calendar Icon" class="work-experience-icon">
+                            <p>08/2021 - present</p>
+                            <p class="text-align-end">10 Months</p>
+                        </div>
+                        <div class="location flex-row centered">
+                            <img src="assets/work-experiences/Globe Icon.svg" alt="Globe Icon" class="work-experience-icon">
+                            <p>York, UK</p>
+                        </div>
+                        <p class="experience-text">Being the first time working in the UK and for a website, this experience has been quite a challenge: in fact, since the start of this experience, there always was something new to learn to make sure the University Of York’s newspaper website was running smoothly. A lot of spare time was used to learn, on the internet, new techniques to interact with the website’s database (through a command prompt or with Filezilla), to maintain the server organized and working smoothly and also to make sure that the Wordpress based website was intuitive and easy to use.</p>
+                    </div>
+                    <div id="experience2" class="grid">
+                        <a id="EpicGames_Logo" href="https://www.epicgames.com/site/en-US/home?lang=en-US" target="_blank">
+                            <img src="assets/work-experiences/Epic Games Logo.svg" alt="Epic Games Logo" id="EpicGames_Logo">
+                        </a>
+                        <div class="work-title flex-row centered">
+                            <img src="assets/work-experiences/Suitcase Icon.svg" alt="Suitcase Icon" class="work-experience-icon">
+                            <p>Fortnite Discord Server Moderator</p>
+                        </div>
+                        <div class="period flex-row centered">
+                            <img src="assets/work-experiences/Calendar Icon.svg" alt="Calendar Icon" class="work-experience-icon">
+                            <p>06/2019 - 10/2020</p>
+                            <p class="text-align-end">15 Months</p>
+                        </div>
+                        <div class="location flex-row centered">
+                            <img src="assets/work-experiences/Globe Icon.svg" alt="Globe Icon" class="work-experience-icon">
+                            <p>Remote</p>
+                        </div>
+                        <p class="experience-text">Being the first time working in the UK and for a website, this experience has been quite a challenge: in fact, since the start of this experience, there always was something new to learn to make sure the University Of York’s newspaper website was running smoothly. A lot of spare time was used to learn, on the internet, new techniques to interact with the website’s database (through a command prompt or with Filezilla), to maintain the server organized and working smoothly and also to make sure that the Wordpress based website was intuitive and easy to use.</p>
+                    </div>
+                    <div id="experience3" class="grid" style="display: none">
                         <a id="Mondadori_Logo" href="https://en.wikipedia.org/wiki/Arnoldo_Mondadori_Editore" target="_blank">
                             <img src="assets/work-experiences/Mondadori.svg" alt="Mondadori Logo" id="Mondadori_Logo">
                         </a>
@@ -202,26 +240,8 @@
                         </div>
                         <p class="experience-text">This first work experience as a bookseller has been very helpful in many ways, not only in the technical parts of it, but also on a personal level. Having to interact with clients and co-workers on a daily basis made them more comfortable around other people and improved their communication skills. Having good Computer related skills also helped in many occasions, such as when there problems with the store’s PCs or when the inventory of every item in the shop had to be updated. The challenge of this new experience was very stimulating, making them think about the possibility of going back and work for more time.</p>
                     </div>
-                    <div id="experience2" class="grid">
-                        <a id="#TheYorker_Logo" href="http://theyorker.co.uk/" target="_blank">
-                            <img src="assets/work-experiences/TheYorker Icon.svg" alt="The Yorker Logo" id="TheYorker_Logo">
-                        </a>
-                        <div class="work-title flex-row centered">
-                            <img src="assets/work-experiences/Suitcase Icon.svg" alt="Suitcase Icon" class="work-experience-icon">
-                            <p>Technical Director</p>
-                        </div>
-                        <div class="period flex-row centered">
-                            <img src="assets/work-experiences/Calendar Icon.svg" alt="Calendar Icon" class="work-experience-icon">
-                            <p>08/2021 - present</p>
-                            <p class="text-align-end">10 Months</p>
-                        </div>
-                        <div class="location flex-row centered">
-                            <img src="assets/work-experiences/Globe Icon.svg" alt="Globe Icon" class="work-experience-icon">
-                            <p>York, UK</p>
-                        </div>
-                        <p class="experience-text">Being the first time working in the UK and for a website, this experience has been quite a challenge: in fact, since the start of this experience, there always was something new to learn to make sure the University Of York’s newspaper website was running smoothly. A lot of spare time was used to learn, on the internet, new techniques to interact with the website’s database (through a command prompt or with Filezilla), to maintain the server organized and working smoothly and also to make sure that the Wordpress based website was intuitive and easy to use.</p>
-                    </div>
                 </div>
+                <div id="bottom-arrow-section" class="centered"><div id="bottom-arrow"><img src="assets/arrow.svg" alt="Right Arrow" onclick="changeExperience()"></div></div>
             </div>
 
 
@@ -427,13 +447,13 @@
                 </div>
 
                 <p>Contact Form</p>
-                <div id="contact-form-grid" class="grid">
-                    <div class="input flex-column"><label for="name">Name:</label><input type="text" name="name" required></div>
-                    <div class="input flex-column"><label for="email">Email:</label><input type="email" name="email" required></div>
-                    <div class="input flex-column"><label for="object">Object:</label><input type="text" name="object" required></div>
-                    <div class="input flex-column"><label for="message">Message:</label><textarea cols="30" rows="10"></textarea></div>
-                    <input type="submit" class="rounded-corners">
-                </div>
+                <form id="contact-form" class="grid" method = "POST" action = "send" enctype = "multipart/form-data">
+                    <label for="name">Name:</label><input type="text" name="name" class="input flex-column" required>
+                    <label for="email">Email:</label><input type="email" name="email" class="input flex-column" required>
+                    <label for="object">Object:</label><input type="text" name="object" class="input flex-column" required>
+                    <label for="message">Message:</label><textarea cols="30" rows="10" name ="message" class="input" required></textarea>
+                    <input type="submit" value="submit" class="rounded-corners">
+                </form>
             </div>
         </div>
     </div>
@@ -441,5 +461,6 @@
 
     <script type="text/javascript" src="app/js/main.js"></script>
     <script type="text/javascript" src="app/js/decoding.js"></script>
+    <script type="text/javascript" src="app/js/contact_notification.js"></script>
 </body>
 </html>
