@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "he": "^1.2.0"
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "he": "^1.2.0",
+    "multiparty": "^4.2.3",
+    "nodemailer": "^6.7.7"
   }
 }
